@@ -1,3 +1,32 @@
+CSRF:
+check if the app accepting text/plain request
+then add the "foo=":"bar"  in the body of the request 
+perform normal CSRF attack by generating the CSRF POC
+
+if the app accepts only application/json
+then check CORS misconfig 
+origin  and ACAO and credential true headers 
+then perform the cross-domain XHR request in modern browsers
+but it is giving you an preflight request and after normal request will be send 
+
+if the app access applicaiton/x-www-form-urlencoded and not validating the content
+generate the POC form burp and add the parameters like 
+<input hidden=”true” type=”text” name=”firstName” value=”Foo”>
+<input hidden=”true” type=”text” name=”lastName” value=”Bar”>
+
+so u will see the in burp request content type is application/x-wwww-form-urlencode and body of the request is traditionally post body date instead of JSON
+
+if you can add the multi part header then data will be in a chunked format send to the server 
+
+id
+--------webformboundaryugfgdfgl
+content-Disposiiton: form-data; name="harish"
+
+
+
+
+
+
 
 https://www.directdefense.com/csrf-in-the-age-of-json/
 https://systemweakness.com/ways-to-exploit-json-csrf-simple-explanation-5e77c403ede6
