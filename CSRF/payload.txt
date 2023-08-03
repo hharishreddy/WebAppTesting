@@ -1,1 +1,5 @@
 
+https://www.directdefense.com/csrf-in-the-age-of-json/
+https://systemweakness.com/ways-to-exploit-json-csrf-simple-explanation-5e77c403ede6
+https://medium.com/@osamaavvan/json-csrf-to-formdata-attack-eb65272376a2
+https://www.linkedin.com/pulse/my-json-csrf-dissection-ramkumar-k
